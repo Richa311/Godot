@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bj7r2vd3ycppi"]
+
+[ext_resource type="PackedScene" uid="uid://dfxfdbcgo2l4h" path="res://Scenes/level_1.tscn" id="1_e2o6t"]
+[ext_resource type="PackedScene" uid="uid://g7k0dw4hf3pb" path="res://test/test_player.tscn" id="2_feb5d"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_t6tti"]
+distance = -53.0
+
+[node name="Game" type="Node2D" unique_id=149433957]
+
+[node name="Level_1" parent="." unique_id=1099749487 instance=ExtResource("1_e2o6t")]
+position = Vector2(-943, -242)
+
+[node name="Test_Player" parent="." unique_id=1695059871 instance=ExtResource("2_feb5d")]
+position = Vector2(-841.00006, -203.99998)
+
+[node name="Boundary" type="StaticBody2D" parent="." unique_id=329143384]
+position = Vector2(122, 108)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundary" unique_id=452606770]
+position = Vector2(-5, 70)
+shape = SubResource("WorldBoundaryShape2D_t6tti")
