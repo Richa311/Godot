@@ -175,4 +175,9 @@ tile_map_data = PackedByteArray("AAADAAUAAAAAAAAAAAAEAAUAAAAAAAAAAAAEAAYAAAAAAAA
 tile_set = SubResource("TileSet_t6tti")
 
 [node name="Platform" parent="." unique_id=776831797 instance=ExtResource("2_8ffim")]
-position = Vector2(646, 157)
+position = Vector2(1091, 121)
+
+[node name="PhysicalBone2D" type="PhysicalBone2D" parent="." unique_id=1531807994]
+position = Vector2(93, 19)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PhysicalBone2D" unique_id=1487367109]
