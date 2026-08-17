@@ -1,3 +1,4 @@
 [gd_scene format=3 uid="uid://b5tn8xcbwwqrx"]
 
 [node name="Player" type="CharacterBody2D" unique_id=1127665387]
+position = Vector2(43, 130)
