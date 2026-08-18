@@ -2,6 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://dvfn8modq5ptn" path="res://Assests/sprites/knight.png" id="1_v0iea"]
 
+[sub_resource type="GDScript" id="GDScript_t6tti"]
+resource_name = "Basic_movement"
+script/source = "extends CharacterBody2D
+"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_cvnsp"]
 atlas = ExtResource("1_v0iea")
 region = Rect2(0, 0, 32, 32)
@@ -161,6 +166,7 @@ height = 186.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1127665387]
 position = Vector2(43, 130)
+script = SubResource("GDScript_t6tti")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=386673833]
 position = Vector2(245.5, 102.50001)
