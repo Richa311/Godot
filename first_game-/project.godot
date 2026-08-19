@@ -19,6 +19,17 @@ run/main_scene="uid://dfxfdbcgo2l4h"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[input]
+
+jump={
+"deadzone": 0.2,
+"events": []
+}
+run={
+"deadzone": 0.2,
+"events": []
+}
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
