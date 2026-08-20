@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://hlclfoosa5ks" path="res://Assests/sprites/world_tileset.png" id="1_vk57k"]
 [ext_resource type="PackedScene" uid="uid://cyxxl0km8b8o1" path="res://Scenes/platform.tscn" id="2_8ffim"]
-[ext_resource type="PackedScene" uid="uid://g7k0dw4hf3pb" path="res://test/test_player.tscn" id="3_xfk5q"]
+[ext_resource type="PackedScene" uid="uid://b5tn8xcbwwqrx" path="res://Scenes/player.tscn" id="3_xfk5q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8ffim"]
 texture = ExtResource("1_vk57k")
@@ -176,7 +176,7 @@ tile_map_data = PackedByteArray("AAADAAUAAAAAAAAAAAAEAAUAAAAAAAAAAAAEAAYAAAAAAAA
 tile_set = SubResource("TileSet_t6tti")
 
 [node name="Platform" parent="." unique_id=776831797 instance=ExtResource("2_8ffim")]
-position = Vector2(1091, 121)
+position = Vector2(650, 150)
 
-[node name="Test_Player" parent="." unique_id=1706815260 instance=ExtResource("3_xfk5q")]
-position = Vector2(93, 19)
+[node name="Player" parent="." unique_id=1127665387 instance=ExtResource("3_xfk5q")]
+position = Vector2(80, 14)

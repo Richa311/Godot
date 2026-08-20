@@ -28,12 +28,12 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 		
 		if direction > 0 :
-			animated_sprite_2d = false
+			animated_sprite_2d.flip_h = false
 		else :
-			animated_sprite_2d = true 
+			animated_sprite_2d.flip_h = true 
 			
 		#flip animation 
-		animated_sprite_2d.play (\"run\")
+		animated_sprite_2d.play(\"run\")
 			
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
@@ -196,22 +196,23 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t6tti"]
 radius = 60.0
-height = 186.0
+height = 146.90912
 
 [node name="Player" type="CharacterBody2D" unique_id=1127665387]
-position = Vector2(43, 130)
+z_index = 5
 script = SubResource("GDScript_7dvkb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=386673833]
-position = Vector2(245.5, 102.50001)
-scale = Vector2(8.59375, 7.5937505)
+position = Vector2(10.62261, -17.805077)
+scale = Vector2(1.2014587, 1.1371827)
 sprite_frames = SubResource("SpriteFrames_crmy0")
 animation = &"run"
 frame = 3
-frame_progress = 0.2777246
+frame_progress = 0.8288794
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1911557070]
-position = Vector2(241, 123)
+position = Vector2(10, -15.000001)
+scale = Vector2(0.1398061, 0.14975245)
 shape = SubResource("CapsuleShape2D_t6tti")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2142884744]
