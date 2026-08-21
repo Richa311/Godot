@@ -115,6 +115,8 @@ sprite_frames = SubResource("SpriteFrames_xfk5q")
 autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=17870023]
+light_mask = 2
+visibility_layer = 2
 shape = SubResource("CircleShape2D_6444e")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
